@@ -3,3 +3,8 @@ cosign.private
 /Containerfile
 *.iso
 *.iso-CHECKSUM
+/.bluebuild-scripts_*
+
+# Archivos locales y respaldos
+recipes/recipe.yml.backup
+docs/IDENTIDAD-VISUAL.md
