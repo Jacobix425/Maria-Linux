@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+set -euo pipefail
+
+SOURCE_DIR="/usr/share/maria/ptyxis/palettes"
+DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
+DEST_DIR="$DATA_HOME/org.gnome.Ptyxis/palettes"
+
+if [[ ! -d "$SOURCE_DIR" ]]; then
+    echo "María: no se encontró el directorio de paletas."
+    exit 1
+fi
+
+mkdir -p "$DEST_DIR"
+
+for palette in "$SOURCE_DIR"/*.palette; do
+    [[ -f "$palette" ]] || continue
+
+    filename="$(basename "$palette")"
+    destination="$DEST_DIR/$filename"
+
+    if [[ ! -e "$destination" && ! -L "$destination" ]]; then
+        install -m 0644 "$palette" "$destination"
+        echo "María: instalada $filename"
+    else
+        echo "María: se conserva la paleta existente $filename"
+    fi
+done

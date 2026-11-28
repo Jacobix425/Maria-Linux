@@ -1,0 +1,94 @@
+/* =========================================
+   MARÍA Wallpapers — Identidad visual
+   ========================================= */
+
+.maria-window {
+    background-color: #FFF9FB;
+    color: #71394F;
+}
+
+/* Barra superior */
+
+headerbar.maria-header {
+    background-color: #F4B7CB;
+    color: #71394F;
+    border-bottom: 1px solid #EAA5BC;
+}
+
+headerbar.maria-header label {
+    color: #71394F;
+    font-weight: 700;
+}
+
+headerbar.maria-header button {
+    color: #71394F;
+}
+
+/* Títulos */
+
+.maria-heading {
+    color: #A84F73;
+    font-weight: 700;
+}
+
+/* Tarjetas */
+
+.wallpaper-card {
+    background-color: #FFFFFF;
+    color: #71394F;
+    border: 1px solid #F0C4D3;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: none;
+    transition: border-color 150ms ease;
+}
+
+.wallpaper-card:hover {
+    border-color: #E58EAE;
+    background-color: #FFF5F8;
+}
+
+.wallpaper-card.selected {
+    border: 2px solid #FF746C;
+    background-color: #FFF0F0;
+}
+
+/* Miniaturas */
+
+.wallpaper-thumbnail {
+    border-radius: 8px;
+}
+
+/* Nombres */
+
+.wallpaper-name {
+    color: #71394F;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
+/* Categorías */
+
+.wallpaper-type {
+    color: #A84F73;
+    font-size: 0.78em;
+}
+
+/* Vista previa de fondos animados */
+
+.wallpaper-video-placeholder {
+    background-color: #F8DCE7;
+    border-radius: 8px;
+}
+
+.wallpaper-video-placeholder label {
+    color: #A84F73;
+    font-size: 1.8em;
+}
+
+/* Cuadrícula */
+
+.wallpaper-grid {
+    padding: 6px;
+}

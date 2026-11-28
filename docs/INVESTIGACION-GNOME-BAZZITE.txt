@@ -1,0 +1,367 @@
+
+=== OVERRIDES DE GNOME ===
+00_org.gnome.shell.gschema.override
+10_org.gnome.desktop.background.fedora.gschema.override
+10_org.gnome.desktop.screensaver.fedora.gschema.override
+org.gnome.Ptyxis.fedora.gschema.override
+org.gnome.login-screen.gschema.override
+org.gnome.shell.gschema.override
+zz0-00-bazzite-desktop-silverblue-global.gschema.override
+zz0-01-bazzite-desktop-silverblue-dash.gschema.override
+zz0-02-bazzite-desktop-silverblue-folders.gschema.override
+zz0-03-bazzite-desktop-silverblue-extensions.gschema.override
+zz0-04-bazzite-desktop-silverblue-theme.gschema.override
+
+=== AJUSTES VISUALES DE BAZZITE ===
+/usr/share/glib-2.0/schemas/10_org.gnome.desktop.background.fedora.gschema.override:2:picture-uri='file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+/usr/share/glib-2.0/schemas/10_org.gnome.desktop.background.fedora.gschema.override:3:picture-uri-dark='file:///usr/share/backgrounds/f45/default/f45-01-night.jxl'
+/usr/share/glib-2.0/schemas/10_org.gnome.desktop.screensaver.fedora.gschema.override:2:picture-uri='file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+/usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override:2:enabled-extensions=['background-logo@fedorahosted.org']
+/usr/share/glib-2.0/schemas/zz0-01-bazzite-desktop-silverblue-dash.gschema.override:2:favorite-apps=['org.mozilla.firefox.desktop', 'steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.kolunmi.Bazaar.desktop', 'io.github.ublue_os.yafti_gtk.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
+/usr/share/glib-2.0/schemas/zz0-03-bazzite-desktop-silverblue-extensions.gschema.override:2:enabled-extensions=['logomenu@aryan_k', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'add-to-steam@pupper.space', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'bazaar-integration@kolunmi.github.io']
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:2:button-layout='appmenu:minimize,maximize,close'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:5:color-scheme='prefer-dark'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:7:document-font-name='Noto Sans 11'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:8:font-name='Noto Sans 11'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:9:monospace-font-name='Fira Code weight=450 10'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:10:accent-color='purple'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:24:picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:25:picture-uri-dark='file:///usr/share/backgrounds/convergence-dynamic.xml'
+/usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override:32:picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+
+=== FRAGMENTOS DCONF ===
+/etc/dconf/db/distro
+/etc/dconf/db/distro.d/00-bazzite-desktop-silverblue-global
+/etc/dconf/db/distro.d/01-bazzite-desktop-silverblue-folders
+/etc/dconf/db/distro.d/locks/00-bazzite-desktop-silverblue-global-lock
+/etc/dconf/db/gdm
+/etc/dconf/db/ibus
+/etc/dconf/db/ibus.d/00-upstream-settings
+/etc/dconf/db/local
+/etc/dconf/db/site
+
+=== CONFIGURACIÓN DCONF RELACIONADA CON GNOME ===
+
+
+========== /usr/share/glib-2.0/schemas/00_org.gnome.shell.gschema.override ==========
+[org.gnome.mutter:GNOME]
+attach-modal-dialogs=true
+edge-tiling=true
+dynamic-workspaces=true
+workspaces-only-on-primary=true
+focus-change-on-pointer-rest=true
+
+
+========== /usr/share/glib-2.0/schemas/10_org.gnome.desktop.background.fedora.gschema.override ==========
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+picture-uri-dark='file:///usr/share/backgrounds/f45/default/f45-01-night.jxl'
+
+
+========== /usr/share/glib-2.0/schemas/10_org.gnome.desktop.screensaver.fedora.gschema.override ==========
+[org.gnome.desktop.screensaver]
+picture-uri='file:///usr/share/backgrounds/f45/default/f45-01-day.jxl'
+
+
+========== /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override ==========
+[org.gnome.shell]
+enabled-extensions=['background-logo@fedorahosted.org']
+
+
+========== /usr/share/glib-2.0/schemas/zz0-00-bazzite-desktop-silverblue-global.gschema.override ==========
+[org.gnome.desktop.wm.keybindings]
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[org.gnome.desktop.peripherals.keyboard]
+numlock-state=true
+
+[org.gtk.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gtk.gtk4.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gnome.nautilus.preferences]
+show-create-link=true
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 20000
+
+[org.gnome.software]
+allow-updates=false
+download-updates=false
+download-updates-notify=false
+
+[org.gnome.Ptyxis]
+restore-session=false
+restore-window-size=false
+audible-bell=false
+
+[org.gnome.shell.extensions.appindicator]
+legacy-tray-enabled=false
+
+[org.gnome.desktop.thumbnailers]
+disable=['inode/directory']
+
+#-------------- REMAINING SCHEMAS IN THIS SETTING SECTION ARE LOCATED IN DCONF --------------#
+# Settings bellow are supported with gschema override, but other settings, which are relocatable schemas, are not. Edit dconfs if you need to modify relocatable schemas.
+
+# LogoMenu extension misses Gschema XML file, so it's in dconf
+
+# Modifying shortcut actions for custom0, custom1, custom2, etc. are recognized as relocatable schemas
+[org.gnome.settings-daemon.plugins.media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+
+
+========== /usr/share/glib-2.0/schemas/zz0-01-bazzite-desktop-silverblue-dash.gschema.override ==========
+[org.gnome.shell]
+favorite-apps=['org.mozilla.firefox.desktop', 'steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.kolunmi.Bazaar.desktop', 'io.github.ublue_os.yafti_gtk.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
+
+
+========== /usr/share/glib-2.0/schemas/zz0-02-bazzite-desktop-silverblue-folders.gschema.override ==========
+#-------------- REMAINING SCHEMAS IN THIS SETTING SECTION ARE LOCATED IN DCONF --------------#
+# Settings bellow are supported with gschema override, but other settings, which are relocatable schemas, are not. Edit dconfs if you need to modify relocatable schemas.
+
+# Folder names & .desktop shortcut content is recognized as a relocatable schema
+[org.gnome.desktop.app-folders]
+folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Waydroid', 'Wine', 'YaST', 'Pardus']
+
+
+========== /usr/share/glib-2.0/schemas/zz0-03-bazzite-desktop-silverblue-extensions.gschema.override ==========
+[org.gnome.shell]
+enabled-extensions=['logomenu@aryan_k', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'blur-my-shell@aunetx', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'add-to-steam@pupper.space', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'bazaar-integration@kolunmi.github.io']
+
+
+========== /usr/share/glib-2.0/schemas/zz0-04-bazzite-desktop-silverblue-theme.gschema.override ==========
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+enable-hot-corners=false
+document-font-name='Noto Sans 11'
+font-name='Noto Sans 11'
+monospace-font-name='Fira Code weight=450 10'
+accent-color='purple'
+
+[org.gnome.mutter]
+center-new-windows=true
+
+[org.gnome.desktop.sound]
+theme-name='steam'
+
+[org.gnome.desktop.wm.preferences]
+titlebar-font='Noto Sans Medium 11'
+
+[org.gnome.desktop.background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+picture-uri-dark='file:///usr/share/backgrounds/convergence-dynamic.xml'
+primary-color='#310042'
+secondary-color='#000622'
+
+[org.gnome.desktop.screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+primary-color='#310042'
+secondary-color='#000622'
+
+[org.gnome.shell.extensions.blur-my-shell.panel]
+blur=true
+static-blur=true
+unblur-in-overview=true
+
+[org.gnome.shell.extensions.blur-my-shell.overview]
+style-components=3
+
+[org.gnome.shell.extensions.blur-my-shell.appfolder]
+blur=false
+style-dialogs=0
+
+[org.gnome.shell.extensions.blur-my-shell.applications]
+blur=false
+
+[org.gnome.shell.extensions.blur-my-shell.screenshot]
+blur=true
+
+[org.gnome.shell.extensions.blur-my-shell.lockscreen]
+blur=true
+
+[org.gnome.shell.extensions.blur-my-shell.dash-to-dock]
+blur=true
+
+[org.gnome.shell.extensions.blur-my-shell.applications]
+opacity=255
+whitelist=['org.gnome.Ptyxis']
+
+[org.gnome.shell.extensions.com.github.hermes83.compiz-windows-effect]
+maximize-effect=true
+resize-effect=true
+
+[org.gnome.shell.extensions.ncom.github.hermes83.compiz-alike-magic-lamp-effect]
+duration=250
+
+[org.gnome.shell.extensions.desktop-cube]
+last-first-gap=false
+enable-desktop-edge-switch=false
+enable-panel-dragging=true
+enable-desktop-dragging=true
+enable-overview-edge-switch=false
+enable-overview-dragging=false
+
+[org.gnome.shell.extensions.touchup]
+navigation-bar-mode='buttons'
+
+
+========== CONFIGURACIÓN DCONF ==========
+/etc/dconf/db/distro.d/01-bazzite-desktop-silverblue-folders
+# Relocatable schemas are located here in dconf
+# Some Gnome extensions don't ship gschema XML, so their settings also need to go in dconf
+
+[org/gnome/desktop/app-folders/folders/GamingUtilities]
+apps=['com.github.Matoking.protontricks.desktop', 'discover_overlay_configure.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.gerbilsoft.rom-properties.rp-config.desktop', 'input-remapper-gtk.desktop', 'steamos-nested-desktop.desktop', 'dev.lizardbyte.app.Sunshine.desktop', 'io.github.radiolamp.mangojuice.desktop']
+name='Gaming Utilities'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['io.github.ublue_os.yafti_gtk.desktop', 'system-update.desktop', 'webapp-manager.desktop', 'tuned-gui.desktop', 'rog-control-center.desktop', 'fish.desktop', 'tuned-gui.desktop', 'nvtop.desktop', 'yelp.desktop', 'btop.desktop', 'com.github.tchx84.Flatseal.desktop', 'io.github.flattool.Warehouse.desktop', 'it.mijorus.gearlever.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'com.github.GradienceTeam.Gradience', 'io.github.fastrizwaan.WineZGUI.desktop', 'setroubleshoot.desktop', 'org.rncbc.qsynth.desktop', 'bazzite-documentation.desktop', 'bazzite-landing.desktop', 'discourse.desktop', 'de.leopoldluley.Clapgrep.desktop', 'btrfs-assistant.desktop', 'org.virt_manager.virt-manager.desktop', 'io.github.flattool.Ignition.desktop', 'firewall-config.desktop', 'org.freedesktop.MalcontentControl.desktop', 'page.tesk.Refine.desktop', 'bbrew.desktop', 'org.gnome.Firmware.desktop', 'cardwire-gui.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Containers]
+apps=['io.github.dvlv.boxbuddyrs.desktop', 'com.ranfdev.DistroShelf.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'com.github.marhkb.Pods.desktop']
+categories=['Distrobox']
+name='Containers'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Wine]
+apps=['winetricks.desktop']
+categories=['X-Wine', 'wine-wine']
+name='Wine'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Waydroid]
+apps=['Waydroid.desktop']
+categories=['X-WayDroid-App']
+name='Waydroid'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Games]
+excluded-apps=['steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.fastrizwaan.WineZGUI.desktop']
+categories=['Game']
+name='Games'
+translate=false
+/etc/dconf/db/distro.d/00-bazzite-desktop-silverblue-global
+# Relocatable schemas are located here in dconf
+# Some Gnome extensions don't ship gschema XML, so their settings also need to go in dconf
+
+# LogoMenu extension
+[org/gnome/shell/extensions/Logo-menu]
+symbolic-icon=false
+menu-button-icon-image=0
+menu-button-icon-size=20
+hide-icon-shadow=false
+menu-button-terminal='ptyxis --new-window'
+menu-button-system-monitor='/usr/bin/missioncenter-helper'
+menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
+menu-button-software-center='/usr/bin/bazaar'
+show-activities-button=true
+show-lockscreen=false
+show-power-option=false
+show-gamemode=false
+hide-forcequit=true
+show-distroshelf=true
+hide-warehouse=true
+
+[org/gnome/shell/extensions/appindicator]
+legacy-tray-enabled=true
+
+[org/gnome/shell/extensions/add-to-steam]
+use-nautilus=false
+
+# Keybindings
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='ptyxis --new-window'
+name='Terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>KP_Delete'
+command='flatpak run io.missioncenter.MissionCenter'
+name='Mission Center'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Control><Shift>Escape'
+command="flatpak run io.missioncenter.MissionCenter"
+name='Mission Center'
+
+
+========== PERFILES DCONF ==========
+/etc/dconf/profile/ibus
+user-db:user
+system-db:ibus
+/etc/dconf/profile/user
+user-db:user
+system-db:local
+system-db:site
+system-db:distro
+
+=== HERRAMIENTA DE COMPILACIÓN ===
+/usr/sbin/glib-compile-schemas
+2.90.1
+
+=== PAQUETES RELACIONADOS ===
+glib2-2.90.1-1.fc45.x86_64
+glib2-2.90.1-1.fc45.i686
+package glib2-devel is not installed
+
+=== ESQUEMAS COMPILADOS ===
+-rw-r--r-- 1 root root 189K Jan  1  1970 /usr/share/glib-2.0/schemas/gschemas.compiled
+
+=== PROPIETARIO DE LA HERRAMIENTA ===
+glib2-2.90.1-1.fc45.x86_64
+
+=== REFERENCIAS AL PROCESO DE COMPILACIÓN ===
+
+=== SCRIPTS DE INSTALACIÓN DE GLIB2 ===
+
+=== SERVICIOS RELACIONADOS ===
+dconf-update.service                                  enabled  disabled
+ldconfig.service                                      static   -
+
+=== ARCHIVOS DE CONFIGURACIÓN RELACIONADOS ===
+/usr/share/man/man1/glib-compile-schemas.1.gz
+
+=== DOCUMENTACIÓN DE LA HERRAMIENTA ===
+Usage:
+  glib-compile-schemas [OPTION…] DIRECTORY
+
+Compile all GSettings schema files into a schema cache.
+Schema files are required to have the extension .gschema.xml,
+and the cache file is called gschemas.compiled.
+
+Help Options:
+  -h, --help                Show help options
+
+Application Options:
+  --version                 Show program version and exit
+  --targetdir=DIRECTORY     Where to store the gschemas.compiled file
+  --strict                  Abort on any errors in schemas
+  --dry-run                 Do not write the gschema.compiled file
+  --allow-any-name          Do not enforce key name restrictions

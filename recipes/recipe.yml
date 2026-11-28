@@ -15,11 +15,9 @@ modules:
       - source: system
         destination: /
 
-  # Registrar los esquemas de configuración de GNOME
-  - type: schema-compile
-    source: local
-
   # Paquetes RPM
+  # Apariencia predeterminada de María
+  - type: gschema-overrides
   - type: dnf
     repos:
 
@@ -42,9 +40,21 @@ modules:
             - brave-origin
 
     remove:
+      auto-remove: false
       packages:
         - firefox
         - firefox-langpacks
+        - waydroid
+        - waydroid-selinux
+
+  # Eliminar Waydroid y sus integraciones de Bazzite
+  - type: script
+    scripts:
+      - remove-waydroid.sh
+
+  # Registrar los esquemas de configuración de GNOME
+  - type: schema-compile
+    source: local
 
   # Aplicaciones Flatpak
   - type: default-flatpaks

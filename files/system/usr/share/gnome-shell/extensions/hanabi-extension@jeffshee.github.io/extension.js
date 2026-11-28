@@ -1976,6 +1976,11 @@ var HanabiExtension = class extends Extension {
       () => this.onSessionModeUpdated()
     );
     this.signalConnections.push([this.settings, showOnLockScreenChangedId]);
+    const videoPathChangedId = this.settings.connect(
+      "changed::video-path",
+      () => this.killCurrentProcess()
+    );
+    this.signalConnections.push([this.settings, videoPathChangedId]);
     this.isEnabled = true;
     if (this.launchRendererTimeoutId)
       GLib8.source_remove(this.launchRendererTimeoutId);

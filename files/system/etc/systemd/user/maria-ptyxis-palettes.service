@@ -1,0 +1,10 @@
+[Unit]
+Description=Install Maria Ptyxis color palettes
+ConditionPathIsDirectory=/usr/share/maria/ptyxis/palettes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/maria-install-ptyxis-palettes
+
+[Install]
+WantedBy=default.target
